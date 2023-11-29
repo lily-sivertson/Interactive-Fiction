@@ -1,0 +1,904 @@
+{
+  "story": "the bread store",
+  "startnode": "0",
+  "passages": [
+    {
+      "name": "The Bread Store",
+      "tags": "",
+      "pid": "0",
+      "links": [
+        {
+          "label": "Look around",
+          "newPassage": "The counter",
+          "pid": "1",
+          "selection": "1"
+        }
+      ],
+      "text": "You wake up on the counter, just as you did yesterday. And the day before yesterday. And the day before the day before yesterday... You wonder if today will be the day that you get chosen."
+    },
+    {
+      "name": "The counter",
+      "tags": "",
+      "pid": "1",
+      "original": "You wake up on the counter, just as you did yesterday. And the day before yesterday. And the day before the day before yesterday... You wonder if today will be the day that you get chosen.\n\n[[Go to the oven->The oven]]\n[[Go to the pantry->The pantry]]\n[[Go to the sink->The sink]]",
+      "links": [
+        {
+          "original": "[[Go to the oven->The oven]]",
+          "label": "Go to the oven",
+          "newPassage": "The oven",
+          "pid": "4",
+          "selection": "1"
+        },
+        {
+          "original": "[[Go to the pantry->The pantry]]",
+          "label": "Go to the pantry",
+          "newPassage": "The pantry",
+          "pid": "3",
+          "selection": "2"
+        },
+        {
+          "original": "[[Go to the sink->The sink]]",
+          "label": "Go to the sink",
+          "newPassage": "The sink",
+          "pid": "2",
+          "selection": "3"
+        },
+        {
+          "label": "Go to the toaster",
+          "newPassage": "The toaster",
+          "pid": "17",
+          "selection": "4"
+        }
+      ],
+      "text": "You are on the counter, a vast expanse of white marble. The surface seems to be covered in places in flour. You can see a door hanging ajar with warm light flooding from it. You also see the sink and oven nearby.",
+      
+      "alt-text": "You are on the counter. The shiny white marble surface is obscured, covered in the blood splatter of your kins-fok. Beyond the counter, you can see a door hanging ajar, with sickly light pouring out from it. You can see the sink and oven nearby. ",
+     
+      "pitems": [
+        {"cstr": ["take piece of paper", "pick up paper", "pick up piece of paper", "grab paper", "take paper"], 
+          "item-text": "There is a piece of paper sitting on the counter near the flour.", 
+          "piid": "1"}
+      ]
+    },
+    {
+      "name": "The sink",
+      "tags": "",
+      "pid": "2",
+      "original": "You are at the sink. You look down and see a vast metal pit with an abyss in the center of it. Across from you is a lever. \n\n[[Go down into the abyss->The abyss]]\n[[Push the lever->The lever]]\n[[Go to the counter->The counter]]",
+      "links": [
+        {
+          "original": "[[Go down into the abyss->The abyss]]",
+          "label": "Go down into the abyss",
+          "newPassage": "The abyss",
+          "pid": "6",
+          "selection": "1"
+        },
+        {
+          "original": "[[Push the lever->The lever]]",
+          "label": "Push the lever",
+          "newPassage": "",
+          "pid": "7",
+          "selection": "2"
+        },
+        {
+          "original": "[[Go to the counter->The counter]]",
+          "label": "Talk to the bread",
+          "pid": "26",
+          "selection": "3"
+        },
+        {
+          "original": "[[Go to the counter->The counter]]",
+          "label": "Go to the counter",
+          "newPassage": "The counter",
+          "pid": "1",
+          "selection": "4"
+        }
+      ],
+      "text": "You are at the sink. You look down and see a vast metal pit with an abyss in the center of it. Across from you is a lever. You see a piece of bread in the sink."
+    },
+    {
+      "name": "The pantry",
+      "tags": "",
+      "pid": "3",
+      "original": "You are in the pantry. You see the essence of life, flour, floating in the air in swirls, as well as other ingredients lining the shelves. There is also a bulletin board and calender on the wall, above a large stack of empty boxes. \n\n[[Go to the counter->The counter]]",
+      "links": [
+        {
+          "original": "[[Go to the counter->The counter]]",
+          "label": "Go to the counter",
+          "newPassage": "The counter",
+          "pid": "1",
+          "selection": "1"
+        },
+        {
+          "label": "Climb onto the shelves",
+          "pid":"22",
+          "selection":"2"
+        },
+        {
+          "label":"Climb boxes",
+          "pid":"23",
+          "selection":"3"
+        }
+        
+      ],
+      "text": "You are in the pantry. You see the essence of life, flour, floating in the air in swirls, as well as other ingredients like yeast and sugar on the shelves.",
+      "pitems": [
+        {"cstr": ["take flour", "grab flour"], 
+          "piid": "2"}
+      ]
+    },
+    {
+      "name": "The oven",
+      "tags": "",
+      "pid": "4",
+      "original": "You are in front of the oven. You can see your reflection in the glass. You think you look loaf-ly as always today. You see new loafs rising in the oven.\n\n[[Go to the counter->The counter]]\n[[Get in the oven->Inside the oven]]",
+      "links": [
+        {
+          "label": "change temperature",
+          "pid": "29",
+          "selection": "1"
+        },
+        {
+          "original": "[[Get in the oven->Inside the oven]]",
+          "label": "Get in the oven",
+          "newPassage": "Inside the oven",
+          "pid": "5",
+          "selection": "2"
+        },
+        {
+          "original": "[[Go to the counter->The counter]]",
+          "label": "Go to the counter",
+          "newPassage": "The counter",
+          "pid": "1",
+          "selection": "3"
+        }
+      ],
+      "text": "You are in front of the oven. You can see your reflection in the glass. You think you look loaf-ly as always today. On the oven you can see some buttons and things to mess with. You see a post-it note left by the oven that says 'make sure not to put the oven temp above 375!!!'."
+      
+    },
+    {
+      "name": "Inside the oven",
+      "tags": "",
+      "pid": "5",
+      "original": "You are inside of the oven. It is very hot here. The other loafs are giving you funny looks.\n\n[[Warn the loafs->Loafs]]\n[[Exit the oven->The oven]]",
+      "links": [
+        {
+          "original": "[[Warn the loafs->Loafs]]",
+          "label": "Warn the loafs",
+          "newPassage": "Loafs",
+          "pid": "11",
+          "selection": "1"
+        },
+        {
+          "original": "[[Exit the oven->The oven]]",
+          "label": "Exit the oven",
+          "newPassage": "The oven",
+          "pid": "4",
+          "selection": "2"
+        }
+      ],
+      "text": "You are inside of the oven. It is very hot here. The other loafs are giving you funny looks.",
+      "hdam": "5"
+    },
+    {
+      "name": "The abyss",
+      "tags": "",
+      "pid": "6",
+      "original": "You are in the abyss. It is dark and dirty down here. Light comes in from above you, a long ways away. You will expend much energy escaping climbing out of here. You see a tunnel leading into the darkness to the right of you. When you look down, you see the abyss keeps going on.\n\n[[Go back up into the sink->The sink]]\n[[Continue down into the abyss->The deeper abyss]]\n[[Go down the tunnel to the right->The tunnel]]",
+      "links": [
+        {
+          "original": "[[Continue down into the abyss->The deeper abyss]]",
+          "label": "Continue down into the abyss",
+          "newPassage": "The deeper abyss",
+          "pid": "8",
+          "selection": "1"
+        },
+        {
+          "original": "[[Go down the tunnel to the right->The tunnel]]",
+          "label": "Go down the tunnel to the right",
+          "newPassage": "The tunnel",
+          "pid": "9",
+          "selection": "2"
+        },
+        {
+          "original": "[[Go back up into the sink->The sink]]",
+          "label": "Go back up into the sink",
+          "newPassage": "The sink",
+          "pid": "2",
+          "selection": "3"
+        }
+      ],
+      "text": "You are in the abyss. It is dark and dirty down here. Light comes in from above you, a long ways away. You will expend much energy escaping climbing out of here. You see a tunnel leading into the darkness to the right of you. When you look down, you see the abyss keeps going on.",
+      "sandam":"2"
+    },
+    {
+      "tags": "",
+      "pid": "7",
+      "original": "You push down the lever. You hear splashing and watch in horror as water pours down upon you. It stings. You feel cold and unhappy. \n\n[[Go back->The sink]]\n[[Go to the abyss in the sink->The abyss]]",
+      "links": [
+        {
+          "original": "[[Go to the abyss in the sink->The abyss]]",
+          "label": "Go to the abyss in the sink",
+          "newPassage": "The abyss",
+          "pid": "6",
+          "selection": "1"
+        },
+        {
+          "original": "[[Go back->The sink]]",
+          "label": "Go back",
+          "newPassage": "The sink",
+          "pid": "2",
+          "selection": "2"
+        }
+      ],
+      "text": "You push down the lever. You hear splashing and watch in horror as water pours down upon you. It stings. You feel cold and unhappy.",
+      "pitems": [
+        {"cstr": ["get water", "fill up bottle", "fill bottle", "fill bottle with water"],
+          "piid": "5"}
+      ]
+      
+    },
+    {
+      "name": "The deeper abyss",
+      "tags": "",
+      "pid": "8",
+      "original": "You are deep in the abyss now of the sink. You can barely see the light filtering in from above you. You feel an impending doom approaching. You don't like this place. \n\n[[continue down->The disposal]]\n[[go back up->The abyss]]",
+      "links": [
+        {
+          "original": "[[continue down->The disposal]]",
+          "label": "continue down",
+          "newPassage": "The disposal",
+          "pid": "10",
+          "selection": "1"
+        },
+        {
+          "original": "[[go back up->The abyss]]",
+          "label": "go back up",
+          "newPassage": "The abyss",
+          "pid": "6",
+          "selection": "2"
+        }
+      ],
+      "text": "You are deep in the abyss now of the sink. You can barely see the light filtering in from above you. You feel an impending doom approaching. You don't like this place.",
+      "sandam": "3"
+    },
+    {
+      "name": "The tunnel",
+      "tags": "",
+      "pid": "9",
+      "original": "You are in the tunnel. It is damp and crusty down here, and it smells like decay. You feel something drip on you and you shudder.\n\n[[Exit the tunnel->The abyss]]",
+      "links": [
+        {
+          "original": "[[Exit the tunnel->The abyss]]",
+          "label": "Exit the tunnel",
+          "newPassage": "The abyss",
+          "pid": "6",
+          "selection": "1"
+        }
+      ],
+      "text": "You are in the tunnel. It is damp and crusty down here, and it smells like decay. You feel something drip on you and you shudder. There is a lot of junk down here that you can hardly even determine what it is. ",
+      "pitems": [
+        {"cstr": ["take bottle", "pick up bottle", "grab bottle", "take small bottle"], 
+          "item-text": "However, you are able to tell one item apart from the rest of the junk; a small bottle with nothing in it. You wonder how long it has been down here.", 
+          "piid": "4"},
+        {"cstr":["take plastic","grab plastic","pick up plastic"],
+          "item-text":"You see an unidentifiable piece of what looks like plastic poking out of the mounds of junk. It looks like part of a set...",
+          "piid":"10"
+        }
+      ],
+      "sandam": "3"
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "10",
+      "original": "You are all the way at the bottom of the abyss. You cannot see anything. You feel something sharp slice into you.",
+      "text": "You are all the way at the bottom of the abyss. You cannot see anything. You feel something sharp slice into you.",
+      "sandam": "4",
+      "hdam":"10",
+      "score":"2",
+      "links": [
+        {
+          "label": "wait",
+          "pid": "12",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "12",
+      "score":"2",
+      "original": "pt 2 of the disposal",
+      "text": "It is so dark down here. You wonder how much longer you will have to wait to get out of here. You cry for help, hoping someone will come and rescue you, as you do not have the energy to escape. Nobody hears your cries...",
+      "sandam": "5",
+      "hdam":"10",
+      "links": [
+        {
+          "label": "keep waiting",
+          "pid": "13",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "13",
+      "original": "pt 3 of the disposal",
+      "score":"2",
+      "text": "You are starting to give up hope on ever getting out. You are so desperately lonely and scared... To distract yourself you try and think about your friends, but you remember that they are gone. They were bought ages ago, but you? You've always been here... You've never been good enough for someone to want to buy you... ",
+      "sandam": "6",
+      "hdam":"10",
+      "links": [
+        {
+          "label": "wait some more",
+          "pid": "14",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "14",
+      "original": "pt 4 of the disposal",
+      "score":"2",
+      "text": "As the minutes keep ticking by, you start to wonder if anyone actually even likes you. Maybe it wasn't that nobody heard your cries earlier, but that nobody cared. Certainly, the sounds echo enough down here someone should have heard your pleas by now... you just want to be free... ",
+      "sandam": "7",
+      "hdam":"10",
+      "links": [
+        {
+          "label": "wait even longer",
+          "pid": "15",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "15",
+      "original": "pt 5 of the disposal",
+      "score":"2",
+      "text": "You are so tired of this. You just want out... You would do anything to get out, even if it meant killing someone. After all, what did they ever do for you? You don't see any way to escape this place though. Even if there was, you don't have enough energy...",
+      "sandam": "8",
+      "hdam":"10",
+      "links": [
+        {
+          "label": "waiting..",
+          "pid": "16",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "16",
+      "original": "pt 6 of the disposal",
+      "text": "... You don't know what to do... it's so lonely down here. At least that's what you thought. You are staring to hear voices saying \u001b[31m'Don't worry, It will all be over soon...'\u001b[0m You want them to go away... 'Please! just leave me alone!' you cry out, but they don't listen... Why would they? Nobody ever listens to you, and now you are going to die down here and it's all their fault ",
+      "sandam": "10",
+      "hdam":"10",
+      "links": [
+        {
+          "label": "wait some more",
+          "pid": "30",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "30",
+      "original": "pt 7 of the disposal",
+      "text": "... You hear someone call out to you. You assume it is just another figment of your imagination but when you turn to look, you see a soft light illuminating the drain. In the light, you can see a dinner roll watching you. They look tired and worn. You do not know whether to be relieved or not to know that you are not alone down here. ",
+      "sandam": "10",
+      "links": [
+        {
+          "label": "talk to the roll",
+          "pid": "31",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "31",
+      "original": "pt 8 of the disposal",
+      "text": "You talk the dinner roll. She informs you her name is Dinah, and that she has been stuck down here for a long time. She tells you she is worried that the disposal will run soon, and that we need to escape as soon as possible or else we will die down here. However, there is no way out as far as you can see. You are far too hungry and tired to even think of climbing the walls out... and you don't have any food on you...right? ",
+      "sandam": "10",
+      "links": [
+        {
+          "label": "watch Dinah",
+          "pid": "32",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "32",
+      "original": "pt 9 of the disposal",
+      "text": "Observing Dinah, you can tell that she has been very much weakened. She does not have much fight left in her. She must be in the same boat as you; tired and hungry, but she has been down here much longer. ",
+      "sandam": "10",
+      "links": [
+        {
+          "label": "wait in silence",
+          "pid": "33",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "33",
+      "original": "pt 10 of the disposal",
+      "text": "... You are so tired... You just want it to end... Even with Dinah down here, you still feel so alone and scared. You don't want to die down here, but if you don't find a way out soon you will end up dead from the garbage disposal if Dinah is correct. ",
+      "sandam": "10",
+      "links": [
+        {
+          "label": "keep waiting",
+          "pid": "34",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "34",
+      "original": "pt 11 of the disposal",
+      "text": "... You are so tired... You just want it to end... Even with Dinah down here, you still feel so alone and scared. You don't want to die down here, but if you don't find a way out soon you will end up dead from the garbage disposal if Dinah is correct...",
+      "sandam": "10",
+      "links": [
+        {
+          "label": "wait some more",
+          "pid": "35",
+          "selection": "1"
+        }
+      ]  
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "35",
+      "original": "pt 12 of the disposal",
+      "text": "You hear a loud whirring noise and feel something sharp slice into you, shredding you instantly. You look up out of the drain in your last moments, waiting for it all to end",
+      "sandam": "10",
+      "hdam":"100",
+      "links": [
+        {
+          "label": "accept your death",
+          "pid": "1",
+          "selection": "1"
+        }
+      ]  
+    },
+    
+    
+    { 
+      "tags": "",
+      "pid": "11",
+      "original": "You go up to the other loafs which are still rising. You tell them, \"beware! Beware! if you stay too long then you may burn in here!\" They thank you graciously.\n\n[[Exit the oven->The oven]]",
+      "links": [
+        {
+          "original": "[[Exit the oven->The oven]]",
+          "label": "Exit the oven",
+          "newPassage": "The oven",
+          "pid": "4",
+          "selection": "1"
+        }
+      ],
+      "text": "You go up to the other loafs which are still rising. You tell them, \"beware! Beware! if you stay too long then you may burn in here!\" They thank you graciously.",
+      "breadleft":"hero"
+    },
+    {
+      "name":"In front of the toaster",
+      "tags":"",
+      "pid":"17",
+      "links": [
+        {
+          "label": "Go to the counter",
+          "pid":"1",
+          "selection":"1"
+        },
+        {
+          "label":"Check in the toaster",
+          "pid":"18",
+          "selection":"2"
+        }
+      
+      ],
+      "text": "Atop the counter there is an industrial looking toaster. You cannot tell if there is any-bun inside of it. You see a few large sliders on the front of the toaster"
+    },
+    {
+      "name":"In the toaster",
+      "tags":"",
+      "pid":"18",
+      "links":[
+        {
+          "label":"Exit the toaster",
+          "pid":"17",
+          "selection":"1"
+        },
+        {
+          "label":"Talk to breads",
+          "pid":"19",
+          "selection":"2"
+        }
+        
+      ],
+      "pchar":[],
+      "text":"You are on the toaster. You can see that some of the slots have bread in them, and they are in varying states of cooked-ness. You wonder if you should help the breads or leave them to cook and die", 
+      "pitems": [
+        {"cstr": ["take packet", "grab packet","take pouch", "grab pouch","pick up pouch", "pick up packet"], 
+          "item-text": "There is something that isnt bread/toast in one of slots. It is hard to tell, but it looks like it may be some sort of packet or pouch", 
+          "piid": "3"}
+      ]
+    },
+    
+    {
+      "tags":"",
+      "pid":"19",
+      "links":[
+        {
+          "label":"help them",
+          "pid":"20",
+          "selection":"1"
+        },
+        {
+          "label":"distract them",
+          "pid":"21",
+          "selection":"2"
+        },
+        {
+          "label":"leave the toaster",
+          "pid":"17",
+          "selection":"3"
+        }
+      ],
+      "text":"You talk to the bread that are currently in the toaster. They seem oblivious to their impending doom"
+    },
+    {
+      "tags":"",
+      "pid":"20",
+      "links":[
+        {
+          "label":"Exit the toaster",
+          "pid":"17",
+          "selection":"1"
+        }
+        
+      ],
+      "text":"you help the breads that are still salvageable out of the toaster. They thank you graciously and wander off to try and get a grip on what just happened to them.",
+      "breadleft":"hero"
+      
+    },
+    {
+      "tags":"",
+      "pid":"21",
+      "links":[
+        {
+          "label":"leave the toaster",
+          "pid":"17",
+          "selection":"1"
+        }
+        
+      ],
+      "text":"you talk to the breads that are in the toaster, just making small talk while they slowly die. This distracts them from realizing they are dying until it is too late. You feel a bit bad about decieving them like this, but it's for the best, right? At least you are distracting them from their suffering. \n\n By the time they realize they are dying, it is already too late for them to be saved. You watch as they burn and become unrecognizable as bread, turning into toast.",
+      "breadleft":"villain",
+      "sandam":"20"
+    },
+    {
+      "name":"The shelves",
+      "tags":"",
+      "pid":"22",
+      "links":[
+        {
+          "label":"climb down shelves",
+          "pid":"3",
+          "selection":"1"
+        }
+      ],
+      "text":"There are and containers filled with ingredients here. They dont seem to be in any particular order. There is a large container of flour, but it seems to be close to running out. You cannot make out many of the labels on other ingredients, but you are able to recognize sugar and yeast.",
+      "pitems":[
+        {"cstr":["take yeast","get yeast","grab yeast"],
+        "piid":"7"},
+        {"cstr": ["take flour", "grab flour"], 
+        "piid": "2"}
+      ]
+    },
+    {
+      "name":"On the stack of boxes",
+      "tags":"",
+      "pid":"23",
+      "links":[
+        {
+          "label":"look at bulletin board",
+          "pid":"24",
+          "selection":"1"
+        },
+        {
+          "label":"look at calender",
+          "pid":"25",
+          "selection":"2"
+        },
+        {
+          "label":"climb down boxes",
+          "pid":"3",
+          "selection":"3"
+        }
+      ],
+      "text":"You are on the stack of boxes in the pantry. From up here, you feel like you can see so much. When you look at the wall, you can see the calender and bulletin board right in front of you.",
+      "pitems":[{"cstr":["take knife","pick up knife","grab knife"],
+      "item-text":"There is a knife on top of the stack of boxes.",
+      "piid":"6"}]
+    },
+    {
+      "name": "Bulletin Board",
+      "tags":"",
+      "pid":"24",
+      "links":[
+        {
+          "label":"look at calender",
+          "pid":"25",
+          "selection":"1"
+        },
+        {
+          "label":"climb down boxes",
+          "pid":"3",
+          "selection":"2"
+        }
+      ],
+      "text":"You see a lot of information on the bulletin baord. In particular, You notice a note that has been circled in red with arrows pointing to it. It reads 'make sure to get more flour!!' You also see a note labeled 'loaves made' that has tally marks on it. There are 96 marks total. At the top of the board you see another note that looks important which says, 'max loaves: 100.' You wonder what this information could mean. "
+    },
+    {
+      "name": "Calendar",
+      "tags":"",
+      "pid":"25",
+      "links":[
+        {
+          "label":"look at bulletin board",
+          "pid":"24",
+          "selection":"1"
+        },
+        {
+          "label":"climb down boxes",
+          "pid":"3",
+          "selection":"2"
+        }
+      ],
+      "text":"You are in front of the calendar. You can see that previous dates have been marked out with an X on the calender. Today is November 17th. You see a note on the 19th saying 'FLOUR DELIVERY TODAY!!!' You also see a post-it note stuck to calender that warns employees to not run out of flour before the deliveries. You wonder what would happen if the shop were to run out of flour..."
+    },
+    {
+      "tags":"choices for the sink when the bread is in the sink and you choose to talk to it",
+      "pid":"26",
+      "links":[
+        {
+          "label":"Help the bread",
+          "pid":"27",
+          "selection":"1"
+        },
+        {
+          "label":"Kill the bread",
+          "pid":"28",
+          "selection":"2"
+        },
+        {
+          "label":"Go into the abyss",
+          "pid":"6",
+          "selection":"3"
+        },
+        {
+          "label":"Exit sink basin",
+          "pid":"1",
+          "selection":"4"
+        }
+      ],
+      "text":"\nYou go down into the sink and ask the bread what they are doing down there. They tell you that were exploring with a friend they fell into the sink and had gotten a rip. They are unable to climb out of the sink on their own."
+    },
+    {
+      "tags":"",
+      "pid":"27",
+      "links":[
+        {
+          "label":"continue",
+          "pid":"1",
+          "selection":"1"
+        }
+        
+      ],
+      "text":"\nYou scoop up the bread and carry them slowly and painstakingly out of the sink and onto the counter. When you get to the top and set them down, they thank you graciously. You ask if they need anything, but they say that you have already done enough for them. You are on the counter again.",
+      "breadleft":"hero"
+    },
+    {
+      "tags":"",
+      "pid":"28",
+      "links":[
+        {
+          "label":"exit the sink basin",
+          "pid":"2",
+          "selection":"1"
+        }
+        
+      ],
+      "text":"\n\nYou plug the abyss. Now if you run the water, the sink will fill up instead of having the water run into the abyss. \n\nYou go up into the sink and push the lever to turn on the water, letting it flood into the sink. You watch as the poor piece of bread down there is covered in water and turns into mush.\n\n After you are satisfied they are dead, you turn off the water and unplug the sink, letting it drain. You watch as the remains of the piece of bread wash down the abyss. You got a bit wet in the process and lose 10 health points, unfortunately.",
+      "sandam":"20",
+      "hdam":"10",
+      "breadleft":"villain"
+    },
+    {
+      "tags":"",
+      "pid":"29",
+      "links":[
+        {
+          "label":"go to the counter",
+          "pid":"1",
+          "selection":"1"
+        }
+        
+      ],
+      "text":"\nYou turn the dials on the oven, changing the one for the temperature. It is set at 350 degrees fahrenheit currently, the optimal temperature. You turn the dial all the way up to 450 and watch as the loaves in the oven burn.\n\n You can hear the loaves inside pleading for help, but you just watch through the window while they catch on fire and burn away into nothingness.\n\nWhen they are all gone, you turn the temperature back to 350.",
+      "sandam":"20",
+      "breadleft":"villain"
+    },
+    {
+      "name": "the disposal",
+      "pid":"36",
+      "text":"You are in the disposal. It is dark down here, but you no longer feel like you are stuck down here. There are some crumbs on the ground from what remains of Dinah.",
+      "links":[
+        {
+          "label":"climb out of the abyss",
+          "pid":"8",
+          "selection":"1"
+        }
+      ]
+    },
+    {
+      "name": "the disposal",
+      "pid":"37",
+      "text":"You are in the disposal. It is dark down here, but the small amount of light down here illuminates the place enough for you to see the remains of Dinah the dinner roll in front of you. You are unsure what to do.",
+      "links":[
+        {
+          "label":"eat Dinah",
+          "pid":"40",
+          "selection":"2"
+        },
+        {
+          "label":"wait",
+          "pid":"38",
+          "selection":"1"
+        }
+      ]
+    },
+    {
+      "name": "the disposal",
+      "pid":"38",
+      "text":"You are in the disposal. It is dark down here, but the small amount of light down here illuminates the place enough for you to see the remains of Dinah the dinner roll in front of you. Youa re unsure what to do. ",
+      "links":[
+        {
+          "label":"wait more",
+          "pid":"39",
+          "selection":"1"
+        },
+        {
+          "label":"eat Dinah",
+          "pid":"40",
+          "selection":"2"
+        }
+      ]
+    },
+    {
+      "name": "the disposal",
+      "pid":"39",
+      "text": "You hear a loud whirring noise and feel something sharp slice into you, shredding you instantly. You look up out of the drain in your last moments, waiting for it all to end",
+      "sandam": "10",
+      "hdam":"100",
+      "links": [
+        {
+          "label": "accept your death",
+          "pid": "1",
+          "selection": "1"
+        }
+      ]
+    },
+    {
+      "name": "the disposal",
+      "pid":"40",
+      "text":"You eat the remains of Dinah. You have much more energy, and even though it is dark down here, you no longer feel like you are stuck down here. There are some crumbs on the ground from what remains of Dinah. ",
+      "links":[
+        {
+          "label":"climb out of the abyss",
+          "pid":"6",
+          "selection":"1"
+        }
+      ]
+    }
+    
+  ],
+  "items": [
+    {
+      "name": "bread recipe",
+      "text": "You pick up the piece of paper from the counter. It appears to be a recipe to make a simple bread. You store it away for safekeeping",
+      "item-text": "There is a piece of paper sitting on the counter near the flour",
+      "desc": "a sheet of paper with the instructions to make a simple loaf of bread. The recipe calls for flour, water, yeast, and oil. ",
+      "iid": "1",
+      "tname": "piece of paper"
+    },
+    {
+      "name": "pouch of flour",
+      "desc": "A small pouch of basic flour. This will probably be more useful when combined with other ingredients",
+      "text": "You scoop up some flour and put it into the empty pouch from your inventory. You store it away for safekeeping.",
+      "iid": "2",
+      "reqi": ["3"],
+      "ftext":"You cannot just carry flour without having anything to store it in."
+    },
+    {
+      "name": "empty pouch",
+      "desc": "An empty pouch. You wonder what you could carry in here.",
+      "text": "You pick up the pouch. It is empty currently. It looks like it could hold ingredients. You store it away for safekeeping.",
+      "iid": "3"
+    },
+    {
+      "name": "empty bottle",
+      "desc": "An empty bottle, prefect for carrying liquids",
+      "text": "You pick up the bottle and peer into it. There is nothing inside of it but you can see the lines on the sides from where minerals deposited from what it carried before. You store it away for safekeeping.",
+      "iid":"4"
+      
+    },
+    {
+      "name": "bottle of water",
+      "desc": "A bottle of water. The bottle is clear, but looking through, everything looks a bit distorted.",
+      "text": "You take out the empty bottle from your inventory and fill it up with text water from the sink. Then you stash it away for safekeeping.",
+      "iid":"5",
+      "reqi": ["4"],
+      "ftext": "You do not have anything to carry the water in."
+      
+    },
+    {
+      "name":"knife",
+      "desc":"A knife. It is pretty shiny, and you can see your reflection in it. It has a serrated edge, perfect for cutting crust",
+      "text":"You pick up the knife from the boxes. You can see your relection in it. It has a serrated edge, perfect for cutting crust. You store it away for safekeeping",
+      "iid":"6"
+      
+    },
+    {
+      "name":"yeast",
+      "desc":"Yeast for baking bread. what else if there to say about this?.",
+      "text":"You take some yeast from the pantry. You store it away for safekeeping.",
+      "iid":"7"
+    },
+    {
+      "name":"dough",
+      "desc":"Some basic bread dough. You will need to cook this for it to rise",
+      "text":"You mix the ingredients that you have collected together, creating a lump of dough from the flour, water, and yeast. You store the dough away for safe keeping.",
+      "iid":"8",
+      "reqi":["5","1","2","7"],
+      "ftext":""
+      
+    },
+    {
+      "name":"sheathed knife",
+      "desc":"A sheathed knife. The cover is made of plastic, which protects the blade from accidentally hurting some-bun",
+      "text":"You put the knife and the blade cover in your inventory together. Now the knife has a cover. You gain 10 score for your genius.",
+      "iid":"9",
+      "reqi":["10","6"],
+      "scorea":"10"
+      
+    },
+    {
+      "name":"blade cover",
+      "desc":"a plastic sheath to cover up a knife. There is no knife with it currently...",
+      "text":"With some tugging, you manage to pull out the piece of plastic from the mound of trash. In the dim light, you can see that the item appears to be a cover of some kind, maybe for a knife? You stash it away in your inventory for safekeeping.",
+      "iid":"10",
+      "scorea":"5"
+      
+    }
+  ]
+}

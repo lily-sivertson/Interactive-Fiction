@@ -1,0 +1,245 @@
+{
+  "story": "the bread store",
+  "startnode": "1",
+  "passages": [
+    {
+      "name": "The counter",
+      "tags": "",
+      "pid": "1",
+      "original": "You wake up on the counter, just as you did yesterday. And the day before yesterday. And the day before the day before yesterday... You wonder if today will be the day that you get chosen.\n\n[[Go to the oven->The oven]]\n[[Go to the pantry->The pantry]]\n[[Go to the sink->The sink]]",
+      "links": [
+        {
+          "original": "[[Go to the oven->The oven]]",
+          "label": "Go to the oven",
+          "newPassage": "The oven",
+          "pid": "4",
+          "selection": "1",
+          "show": "True"
+        },
+        {
+          "original": "[[Go to the pantry->The pantry]]",
+          "label": "Go to the pantry",
+          "newPassage": "The pantry",
+          "pid": "3",
+          "selection": "2"
+        },
+        {
+          "original": "[[Go to the sink->The sink]]",
+          "label": "Go to the sink",
+          "newPassage": "The sink",
+          "pid": "2",
+          "selection": "3"
+        }
+      ],
+      "text": "You wake up on the counter, just as you did yesterday. And the day before yesterday. And the day before the day before yesterday... You wonder if today will be the day that you get chosen."
+    },
+    {
+      "name": "The sink",
+      "tags": "",
+      "pid": "2",
+      "original": "You are at the sink. You look down and see a vast metal pit with an abyss in the center of it. Across from you is a lever. \n\n[[Go down into the abyss->The abyss]]\n[[Push the lever->The lever]]\n[[Go to the counter->The counter]]",
+      "links": [
+        {
+          "original": "[[Go down into the abyss->The abyss]]",
+          "label": "Go down into the abyss",
+          "newPassage": "The abyss",
+          "pid": "6",
+          "selection": "1"
+        },
+        {
+          "original": "[[Push the lever->The lever]]",
+          "label": "Push the lever",
+          "newPassage": "The lever",
+          "pid": "7",
+          "selection": "2"
+        },
+        {
+          "original": "[[Go to the counter->The counter]]",
+          "label": "Go to the counter",
+          "newPassage": "The counter",
+          "pid": "1",
+          "selection": "3"
+        }
+      ],
+      "text": "You are at the sink. You look down and see a vast metal pit with an abyss in the center of it. Across from you is a lever."
+    },
+    {
+      "name": "The pantry",
+      "tags": "",
+      "pid": "3",
+      "original": "You are in the pantry. You see the essence of life, flour, as well as other ingredients like yeast and sugar. \n\n[[Go to the counter->The counter]]",
+      "links": [
+        {
+          "original": "[[Go to the counter->The counter]]",
+          "label": "Go to the counter",
+          "newPassage": "The counter",
+          "pid": "1",
+          "selection": "1"
+        }
+      ],
+      "text": "You are in the pantry. You see the essence of life, flour, as well as other ingredients like yeast and sugar."
+    },
+    {
+      "name": "The oven",
+      "tags": "",
+      "pid": "4",
+      "original": "You are in front of the oven. You can see your reflection in the glass. You think you look loaf-ly as always today. You see new loafs rising in the oven.\n\n[[Go to the counter->The counter]]\n[[Get in the oven->Inside the oven]]",
+      "links": [
+        {
+          "original": "[[Go to the counter->The counter]]",
+          "label": "Go to the counter",
+          "newPassage": "The counter",
+          "pid": "1",
+          "selection": "1"
+        },
+        {
+          "original": "[[Get in the oven->Inside the oven]]",
+          "label": "Get in the oven",
+          "newPassage": "Inside the oven",
+          "pid": "5",
+          "selection": "2"
+        }
+      ],
+      "text": "You are in front of the oven. You can see your reflection in the glass. You think you look loaf-ly as always today. You see new loafs rising in the oven."
+    },
+    {
+      "name": "Inside the oven",
+      "tags": "",
+      "pid": "5",
+      "original": "You are inside of the oven. It is very hot here. The other loafs are giving you funny looks.\n\n[[Warn the loafs->Loafs]]\n[[Exit the oven->The oven]]",
+      "links": [
+        {
+          "original": "[[Warn the loafs->Loafs]]",
+          "label": "Warn the loafs",
+          "newPassage": "Loafs",
+          "pid": "11",
+          "selection": "1"
+        },
+        {
+          "original": "[[Exit the oven->The oven]]",
+          "label": "Exit the oven",
+          "newPassage": "The oven",
+          "pid": "4",
+          "selection": "2"
+        }
+      ],
+      "text": "You are inside of the oven. It is very hot here. The other loafs are giving you funny looks."
+    },
+    {
+      "name": "The abyss",
+      "tags": "",
+      "pid": "6",
+      "original": "You are in the abyss. It is dark and dirty down here. Light comes in from above you, a long ways away. You will expend much energy escaping climbing out of here. You see a tunnel leading into the darkness to the right of you. When you look down, you see the abyss keeps going on.\n\n[[Go back up into the sink->The sink]]\n[[Continue down into the abyss->The deeper abyss]]\n[[Go down the tunnel to the right->The tunnel]]",
+      "links": [
+        {
+          "original": "[[Go back up into the sink->The sink]]",
+          "label": "Go back up into the sink",
+          "newPassage": "The sink",
+          "pid": "2",
+          "selection": "1"
+        },
+        {
+          "original": "[[Continue down into the abyss->The deeper abyss]]",
+          "label": "Continue down into the abyss",
+          "newPassage": "The deeper abyss",
+          "pid": "8",
+          "selection": "2"
+        },
+        {
+          "original": "[[Go down the tunnel to the right->The tunnel]]",
+          "label": "Go down the tunnel to the right",
+          "newPassage": "The tunnel",
+          "pid": "9",
+          "selection": "3"
+        }
+      ],
+      "text": "You are in the abyss. It is dark and dirty down here. Light comes in from above you, a long ways away. You will expend much energy escaping climbing out of here. You see a tunnel leading into the darkness to the right of you. When you look down, you see the abyss keeps going on."
+    },
+    {
+      "name": "The lever",
+      "tags": "",
+      "pid": "7",
+      "original": "You push down the lever. You hear splashing and watch in horror as water pours down upon you. It stings. You feel cold and unhappy. \n\n[[Go back->The sink]]\n[[Go to the abyss in the sink->The abyss]]",
+      "links": [
+        {
+          "original": "[[Go back->The sink]]",
+          "label": "Go back",
+          "newPassage": "The sink",
+          "pid": "2",
+          "selection": "1"
+        },
+        {
+          "original": "[[Go to the abyss in the sink->The abyss]]",
+          "label": "Go to the abyss in the sink",
+          "newPassage": "The abyss",
+          "pid": "6",
+          "selection": "2"
+        }
+      ],
+      "text": "You push down the lever. You hear splashing and watch in horror as water pours down upon you. It stings. You feel cold and unhappy."
+    },
+    {
+      "name": "The deeper abyss",
+      "tags": "",
+      "pid": "8",
+      "original": "You are deep in the abyss now of the sink. You can barely see the light filtering in from above you. You feel an impending doom approaching. You don't like this place. \n\n[[continue down->The disposal]]\n[[go back up->The abyss]]",
+      "links": [
+        {
+          "original": "[[continue down->The disposal]]",
+          "label": "continue down",
+          "newPassage": "The disposal",
+          "pid": "10",
+          "selection": "1"
+        },
+        {
+          "original": "[[go back up->The abyss]]",
+          "label": "go back up",
+          "newPassage": "The abyss",
+          "pid": "6",
+          "selection": "2"
+        }
+      ],
+      "text": "You are deep in the abyss now of the sink. You can barely see the light filtering in from above you. You feel an impending doom approaching. You don't like this place."
+    },
+    {
+      "name": "The tunnel",
+      "tags": "",
+      "pid": "9",
+      "original": "You are in the tunnel. It is damp and crusty down here, and it smells like decay. You feel something drip on you and you shudder.\n\n[[Exit the tunnel->The abyss]]",
+      "links": [
+        {
+          "original": "[[Exit the tunnel->The abyss]]",
+          "label": "Exit the tunnel",
+          "newPassage": "The abyss",
+          "pid": "6",
+          "selection": "1"
+        }
+      ],
+      "text": "You are in the tunnel. It is damp and crusty down here, and it smells like decay. You feel something drip on you and you shudder."
+    },
+    {
+      "name": "The disposal",
+      "tags": "",
+      "pid": "10",
+      "original": "You are all the way at the bottom of the abyss. You cannot see anything. You feel something sharp slice into you.",
+      "links": [],
+      "text": "You are all the way at the bottom of the abyss. You cannot see anything. You feel something sharp slice into you."
+    },
+    {
+      "name": "Loafs",
+      "tags": "",
+      "pid": "11",
+      "original": "You go up to the other loafs which are still rising. You tell them, \"beware! Beware! if you stay too long then you may burn in here!\" They thank you graciously.\n\n[[Exit the oven->The oven]]",
+      "links": [
+        {
+          "original": "[[Exit the oven->The oven]]",
+          "label": "Exit the oven",
+          "newPassage": "The oven",
+          "pid": "4",
+          "selection": "1"
+        }
+      ],
+      "text": "You go up to the other loafs which are still rising. You tell them, \"beware! Beware! if you stay too long then you may burn in here!\" They thank you graciously."
+    }
+  ]
+}
